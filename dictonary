@@ -1,0 +1,12 @@
+fmap={}
+    count=0
+    for i in arr:
+        if i not in fmap:
+            fmap[i]=1
+        else:
+            fmap[i]+=1
+    for i in range(len(arr)):
+        val=arr[i]+k
+        if val in fmap:
+            count+=fmap[val]
+    return count
